@@ -1,0 +1,214 @@
+.candidate-table {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    margin:auto;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.229);
+
+
+}
+
+ .candidate-table .filter-container {
+    display: flex;
+    gap: 20px;
+    /* float: right; */
+    margin-bottom: 1rem;
+    align-items: center;
+}
+.candidate-table .filter-container .input-box input{
+    width: 100%;
+    margin: auto;
+}
+ .candidate-table .filter-container .select-box{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+ .candidate-table .filter-container  label{
+    /* width: 100%; */
+    text-wrap: nowrap;
+}
+  .candidate-table .filter-container select {
+    padding-right: 25px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="20" height="20"><path fill="black" d="M9 11h12L15 19z"/></svg>');
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 10px);
+    background-position-y: center;
+}
+
+  .candidate-table .filter-container button{
+    background-color: #1cb184;
+color: white;
+padding: 10px;
+border-radius: 5px;
+width: auto;
+height: auto;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 5px;
+border: none;
+}
+
+ .candidate-table h3 {
+    margin-bottom: 1rem;
+}
+
+.candidate-table table {
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse !important;
+}
+.candidate-table table tr{
+    border-bottom: 2px solid rgb(220, 220, 220);
+}
+
+
+
+.candidate-table table,
+th,
+td {
+    border: none;
+    padding: 10px 0 !important;
+
+}
+.candidate-table table tr td{
+    font-weight: 700;
+    color: rgb(53, 52, 52);
+    text-transform: capitalize;
+}
+
+
+
+.candidate-table table tr th {
+    padding: 10px;
+    color: rgb(138, 138, 138);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.candidate-table .buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+
+}
+
+.candidate-table .buttons a {
+    color: white;
+    padding: 5px 13px;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: .8rem;
+}
+
+ .candidate-table .buttons a:nth-child(1) {
+    background-color: #30b7fb58;
+    color: #30b7fb;
+    transition: all 0.3s ease;
+}
+.candidate-table .buttons a:nth-child(1):hover{
+    background-color: #30b7fb;
+    color: #ffffff;
+
+}
+
+  .candidate-table .buttons a:nth-child(2) {
+    background-color: #6fb14c6c;
+    color: #53b120;
+    transition: all 0.3s ease;
+}
+.candidate-table .buttons a:nth-child(2):hover {
+    background-color: #6fb14c;
+    color: #ffffff;
+}
+
+.candidate-table .buttons a:nth-child(3) {
+    background-color: #e059598b;
+    color: #e13f3f;
+    transition: all 0.3s ease;
+}
+.candidate-table .buttons a:nth-child(3):hover {
+    background-color: #e05959;
+    color: #ffffff;
+}
+
+ 
+
+.candidate-table .buttons button{
+    color: white;
+    padding: 5px 20px;
+    border-radius: 30px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: #3ba501;
+    width: max-content;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.229);
+    transition: all 0.3s ease;
+}
+
+.candidate-table .buttons button:hover{
+    background-color: #328804;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:850px) {
+    .candidate-table table tr th{
+        font-size: .8rem;
+        padding: 5px 2px !important;
+    }
+    .candidate-table table tr td{
+        font-size: .7rem;
+        padding: 5px 2px !important;
+    }
+    .candidate-table .select-boxes select{
+        width: 80%;
+        font-size: .7rem;
+        padding: 2px;
+
+    }
+    .candidate-table .buttons a {
+        padding: 3px 7px;
+        font-size: .6rem;
+    }
+    .candidate-table .buttons button {
+        font-size: .7rem;
+        padding: 3px 12px;
+    }
+    
+}
+
+@media screen and (max-width: 767px) {
+    .candidate-table table tr th {
+        font-size: .6rem;
+    }
+    .candidate-table .filter-container button {
+        font-size: .7rem;
+        padding: 5px 10px;
+    }
+    .candidate-table table tr td {
+        font-size: .5rem;
+    }
+    .candidate-table .buttons {
+        gap: 4px;
+    }
+    .candidate-table .buttons button {
+        font-size: .5rem;
+        padding: 3px 12px;
+    }
+}
